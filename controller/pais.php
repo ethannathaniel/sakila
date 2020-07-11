@@ -22,4 +22,5 @@ $objeto->edad = 20;
 //prnt objeto
 echo "hola mi nopmbre es {$objeto->nombre} mi edad es {$objeto->edad}";
 */
-
+//INCLUDE usar include_once "carpeta/nombre";
+//require usar require_once "";
