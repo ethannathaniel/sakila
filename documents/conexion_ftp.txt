@@ -1,0 +1,11 @@
+Mi pagina web:
+
+
+Conexion FTP
+
+servidor:
+nombre de usuario:
+password:
+
+
+Informacion de base de datos
