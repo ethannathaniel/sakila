@@ -30,7 +30,7 @@ $objeto->edad = 20;
 
 //prnt objeto
 
-echo "hola mi nopmbre es {$objeto->nombre} mi edad es {$objeto->edad}";
+echo "hola mi nombre es {$objeto->nombre} mi edad es {$objeto->edad}";
 
 */
 
