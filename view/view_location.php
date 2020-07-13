@@ -1,6 +1,5 @@
 <?php
-
-$pagina = "Actor";
+$pagina = "location";
 
 include_once "sections/section_head.php";
 

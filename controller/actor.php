@@ -1,4 +1,3 @@
 <?php
 
-// Declarar el nombre de la pagina 
-$pagina = "Actor";
+include_once "../view/view_actor.php";

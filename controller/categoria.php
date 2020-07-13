@@ -1,5 +1,4 @@
 <?php
 
 
-// Declarar el nombre de la pagina 
-$pagina = "Category";
+include_once "../view/view_categoria.php";
