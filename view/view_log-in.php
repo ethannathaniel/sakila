@@ -1,5 +1,5 @@
 <?php
-$pagina = "location";
+$pagina = "login";
 
 include_once "sections/section_head.php";
 

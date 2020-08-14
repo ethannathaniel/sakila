@@ -1,29 +1,18 @@
 <?php?>
 
 <body>
-
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-<div class="container">
-  <a class="navbar-brand" href="index.php">Sakila</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="d-flex flex-row-reverse collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav">
-      <li class="nav-item">
-        <a class="nav-link" href="categoria.php">Category</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="location.php">Location</a>
-      </li>
-      <li class="nav-item">
-      <a class="nav-link" href="cart.php">Cart</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="user.php">User</a>
-      </li>
-    </ul>
+<header>
+  <div class="contenedor">
+    <nav>
+      <ul class="menu">
+          <li class="logotipo"><a href="index.php">Sakila</a></li>
+          <li class="item active"><a href="index.php"><i class="fas fa-home"></i>Home</a></li>
+          <li class="item"><a href="categoria.php"><i class="fas fa-scroll"></i>Categories</a></li>
+          <li class="item"><a href="cart.php"><i class="fas fa-shopping-cart"></i>Cart</a></li>
+          <li class="item button"><a href="log-in.php"><i class="fas fa-user"></i>Login</a></li>
+          <li class="item button secondary"><a href="log-in.php"><i class="fas fa-user"></i>Sign Up</a></li>
+          <li class="toggle"><span class="bars"></span></li>
+      </ul>
+    </nav>
   </div>
-  </div>
-</nav>    
-
+</header>

@@ -1,0 +1,283 @@
+:root {
+    --rojo: #E50914;
+    --fondo: #141414;
+    --morado: #840ca8;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--fondo);
+    font-family: 'Open Sans', sans-serif;
+}
+
+.contenedor {
+    width: 90%;
+    margin: auto;
+}
+
+header {
+    padding: 20px 0 8px 0 ;  
+}
+
+
+header nav ul li.logotipo a{
+    font-family: 'Bebas Neue', cursive;
+    font-weight: normal;
+    color: var(--morado);
+    font-size: 45px;
+    text-decoration: none;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    padding: 15px 5px;
+}
+
+header nav ul li a {
+    display: block;
+}
+
+header nav ul li.item a {
+    color: #AAA;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+header nav ul li a i {
+    margin-right: 0.25em;
+}
+
+.menu .item a:hover,
+.menu li.active a{
+    color: #FFF;
+}
+
+header nav ul li.button.secondary {
+    border-bottom: 1px var(--morado) solid;
+}
+/*-------  mobile media queries ------*/
+
+.menu2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.toggle {
+    order: 1;
+}
+
+.item.button{
+    order: 2;
+}
+
+.item {
+    width: 100%;
+    text-align: center;
+    order: 3;
+    display: none;
+}
+
+.item.activa {
+    display: block;
+}
+
+.toggle {
+    cursor: pointer;
+}
+
+.bars {
+    background: #999;
+    display: inline-block;
+    height: 2px;
+    position: relative;
+    width: 18px;
+}
+
+.bars::before, .bars::after {
+    background: #999;
+    content: "";
+    display: inline-block;
+    height: 2px;
+    position: absolute;
+    width: 18px;
+}
+
+.bars::before {
+    top: 5px;
+}
+
+.bars::after {
+    top: -5px;
+}
+
+/* ------- tablet menu ------- */
+
+@media all and (min-width:750px){
+    .menu {
+        justify-content: center;
+    }
+
+    .logotipo {
+        flex: 1;
+    }
+
+    .item.button {
+        width: auto;
+        order: 1;
+        display: block;
+    }
+
+    .toggle {
+        order: 2;
+    }
+
+    .button.secondary {
+        border: 0;
+    }
+
+    .button a {
+        text-decoration: none;
+        padding: 7px 15px;
+        background: teal;
+        border: 1px solid #006d6d;
+        border-radius: 50em;
+    }
+
+    .button.secondary a {
+        background: transparent;
+    }
+
+    .button a:hover {
+        transition: all .25s;
+    }
+
+    .button:not(.secondary) a:hover{
+        background: #006d6d;
+        border-color: #005959;
+    }
+
+    .button.secondary a:hover {
+        color: #ddd;
+    }
+    
+}
+
+/* ------- desktop media menu ------- */
+
+@media all and (min-width: 870px) {
+    .item {
+        display: block;
+        width: auto;
+    }
+    
+    .toggle {
+        display: none;
+    }
+
+    .logotipo {
+        order: 0;
+    }
+
+    .item {
+        order: 1;
+    }
+
+    .button {
+        order: 2;
+    }
+
+    .menu li {
+        padding: 15px 10px;
+    }
+
+    .menu li.button {
+        padding-right: 0;
+    }
+}
+/* ------- pelicula principal ------- */
+
+.pelicula-principal {
+    font-size: 14px;
+    min-height: 40.62em;
+    color: #FFF;
+    background: linear-gradient(rgba(0, 0, 0, .50) 0%, rgba(0, 0, 0, .50) 100%), url(../img/back2.jpg);
+    background-position: center center;
+    background-size: cover;
+    margin-bottom: 3.12em;
+    display: flex;
+    align-items: flex-end;
+}
+
+.pelicula-principal .contenedor {
+    margin: 0 auto;
+    margin-bottom: 5.50em;
+}
+
+.pelicula-principal .titulo {
+    font-weight: 600;
+    font-size: 3.12em;
+    margin-bottom: 0.4em;
+}
+
+.pelicula-principal .descripcion {
+    font-weight: normal;
+    font-size: 1em;
+    line-height: 1.75em;
+    max-width: 50%;
+    margin-bottom: 1.25em;
+}
+
+.pelicula-principal .boton {
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+    border-radius: 0.31em;
+    padding: 0.93em 1.87em;
+    color: #FFF;
+    margin-right: 1.25em;
+    cursor: pointer;
+    transition: .3 ease all;
+    font-size: 1.12em;
+}
+
+.pelicula-principal .boton:hover {
+    background: #FFF;
+    color: #000;
+
+}
+
+.pelicula-principal .boton i {
+    margin-right: 1.25em;
+}
+/* ------- mobile media info ------- */
+
+@media all and (max-width: 500px) {
+
+    .pelicula-principal {
+        font-size: 12px;
+    }
+    .pelicula-principal .boton {
+        margin-bottom: 0.7em;
+    }
+    .pelicula-principal .titulo {
+        font-size: 2.5em;
+    }
+    .pelicula-principal .descripcion {
+        max-width: 75%;
+        font-size: 1em;
+    }
+}
